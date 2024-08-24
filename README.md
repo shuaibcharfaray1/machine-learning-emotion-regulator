@@ -46,3 +46,32 @@ The `front-end` branch is for all front-end changes. Every new feature or page w
 The `back-end` branch is selft explanatory. For all new back-end features. They will have a branch made here, coded, tested, validated and refined. Once that unit has been tested. It will be merged with `back-end`.
 
 The `documentation` branch is mainly for developmental documentation. This is not for collaborators to work with unless instructed to. These are for project planning, design, and all details.
+
+# Set up and configuration
+
+Due to this project being programmed in the python language. The set up will follow the below instructions.
+
+Please follow the steps available at [W3 Schools](https://www.w3schools.com/git/git_remote_fork.asp?remote=github). Please read these carefully before doing the below steps.
+
+1. Fork the repository.
+   1. On GitHub, navigate to the repository you want to fork.
+   2. Click the "Fork" button at the top right of the page.
+2. Clone the repository to your local machine. Make sure you navigate to the folder where you wish to have the program installed.
+3. Navigate to the cloned folder and set up the Virtual environment.
+   1. `python -m venv myvenv`
+   2. To activate it in both your normal terminal and git bash terminal. Below are the commands for each
+      1. windows terminal `venv\Scripts\activate`.
+      2. bash terminal `source venv/bin/activate`
+4. Install requirements.txt.
+   1. `pip install -r requirements.txt`.
+5. Configure the environment variables.
+    - You'd need to configure the following environment variables. For simplicity sake these will be configured in git bash terminal.
+    1. `export FLASK_APP=units/main.py`.
+    2. `export FLASK_ENV=development`.
+6. Confirm the variables were set.
+    1. `echo $FLASK_APP`.
+    2. `ECHO $FLASK_ENV`.
+7. Run the flask app.
+   1. `flask run`
+
+Once the above steps are done, you will be able to collaborate.
