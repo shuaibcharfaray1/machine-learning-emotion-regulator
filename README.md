@@ -75,3 +75,4 @@ Please follow the steps available at [W3 Schools](https://www.w3schools.com/git/
    1. `flask run`
 
 Once the above steps are done, you will be able to collaborate.
+
